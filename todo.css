@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+:root {
+
+	--light: white;
+	--dark: black;
+
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--light);
+
+	background-image: url(/steve-johnson-TnjzgonRFPU-unsplash.jpg);
+}
+
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title {
+	color: var(--dark);
+	font-family: 'Caveat', cursive;
+	font-size: 80px;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: var(--light);
+	margin-bottom: 1rem;
+
+}
+
+#new-task-form {
+	display: flex;
+	;
+}
+
+input,
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--light);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--dark);
+	font-size: 1.25rem;
+	font-weight: bold;
+	
+}
+
+#new-task-input::placeholder {
+	color: var(--dark);
+}
+
+#new-task-submit {
+	color: var(--light);
+	font-size: 30px;
+	font-weight: 700;
+
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 30px;
+	font-weight: 300;
+	color: var(--light);
+	margin-bottom: 1rem;
+
+}
+
+#tasks .task {
+
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(178, 178, 178);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	font-weight: bold;
+	font-style: italic;
+	color: var(--dark);
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+
+	font-size: 25px;
+	color: rgb(247, 17, 56);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+
+	color: var(--dark);
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+.task .actions .delete {
+
+	font-weight: bold;
+	color: var(--dark);
+	font-style: italic;
+}
+
+#clock {
+
+	font-family: 'Orbitron', sans-serif;
+	color: var(--light);
+	font-size: 56px;
+	text-align: center;
+	margin-left: 30px;
+	padding-top: 40px;
+
+}
+
+#date {
+	font-size: 36px;
+
+	font-family: 'Caveat', cursive;
+	color: var(--light);
+	margin-left: 30px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.page {
+	box-shadow: 0 0 0 2px rgb(247, 247, 247);
+	margin-left: 550px;
+	width: 900px;
+	height: auto;
+	background-color: rgb(250, 7, 7);
+
+}
+
+.back {
+
+	margin-left: 50px;
+	width: 450px;
+	height: 250px;
+	background-color: var(--dark);
+}
